@@ -358,7 +358,7 @@ class ExportMixin(ImportExportMixinBase):
         cl = ChangeList(request, self.model, list_display,
             list_display_links, list_filter, self.date_hierarchy,
             search_fields, self.list_select_related, self.list_per_page,
-            self.list_max_show_all, self.list_editable, self
+            self.list_max_show_all, self.list_editable, self, None
         )
 
         return cl.get_queryset(request)
